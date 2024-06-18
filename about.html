@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blue Rental | Sobre nosotros</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/styles/indexStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles/customClasses.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/img/logonav.png" alt="" width="150" height="150"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor03"
+            aria-controls="navbarColor03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Inicio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Alquileres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quienes Somos</a>
+              </li>
+            </ul>
+            <button
+              type="button"
+              class="btn btn-outline-custom mx-1"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop1"
+            >
+              Registrarse
+            </button>
+            <div
+              class="modal fade"
+              id="staticBackdrop1"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header bg-light">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Registro
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body custom-bg3">
+                    <div class="container">
+                      <form id="registerForm" class="accessForm">
+                        <h2 class="text-light">¡Registrate!</h2>
+                        <label class="text-light">Nombre/s:</label>
+                        <input
+                          placeholder="Ingrese su nombre"
+                          type="text"
+                          name="username"
+                          class="form-control mb-3"
+                        />
+                        <label class="text-light">Apellido/s:</label>
+                        <input
+                          placeholder="Ingrese su Apellido"
+                          type="text"
+                          name="username"
+                          class="form-control mb-3"
+                        />
+                        <label class="text-light">Correo Electronico:</label>
+                        <input
+                          placeholder="example@gmail.com"
+                          type="email"
+                          name="email"
+                          class="form-control mb-3"
+                        />
+                        <label class="text-light">Contraseña</label>
+                        <input
+                          placeholder="Ingrese su contraseña"
+                          type="password"
+                          name="password"
+                          class="form-control mb-3"
+                        />
+                        <label class="text-light">Repetir Contraseña</label>
+                        <input
+                          placeholder="Repita su contraseña"
+                          type="password"
+                          name="confirm-password"
+                          class="form-control mb-3"
+                        />
+                        <span id="error"> </span>
+                        <div>
+                          <input type="checkbox" name="check" />
+                          <span class="text-light"
+                            >Aceptar los terminos y condiciones</span
+                          >
+                        </div>
+                        <button type="submit" class="btn button-custom2">
+                          Registrarse
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="modal-footer bg-light">
+                    <button
+                      type="button"
+                      class="btn btn-outline-custom"
+                      data-bs-dismiss="modal"
+                    >
+                      Salir
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-outline-custom mx-1"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop2"
+            >
+              Inicio Sesión
+            </button>
+            <div
+              class="modal fade"
+              id="staticBackdrop2"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header bg-light">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Inicio Sesión
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body custom-bg3">
+                    <div class="container">
+                      <form id="registerForm" class="accessForm">
+                        <h2 class="text-light">Iniciar Sesión</h2>
+                        <label class="text-light">Correo Electronico:</label>
+                        <input
+                          placeholder="example@gmail.com"
+                          type="email"
+                          name="email"
+                          class="form-control mb-3"
+                        />
+                        <label class="text-light">Contraseña</label>
+                        <input
+                          placeholder="Ingrese su contraseña"
+                          type="password"
+                          name="password"
+                          class="form-control mb-3"
+                        />
+                        <button type="submit" class="btn button-custom2">
+                          Iniciar Sesión
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="modal-footer bg-light">
+                    <button
+                      type="button"
+                      class="btn btn-outline-custom"
+                      data-bs-dismiss="modal"
+                    >
+                      Salir
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form class="d-flex me-5">
+              <input
+                class="form-control me-sm-2"
+                type="search"
+                placeholder="Buscar..."
+              />
+              <button class="btn button-custom my-2 my-sm-0" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+   <main style="width: 100%;  height: 100%;">
+        <p><div class="container bg-light rounded">
+            <div class="row">
+                <div class="col-md-12">
+                    <p><h1 class="text-primary">Sobre Nosotros</h1></p>
+                    <p class="text-primary">Somos una compañía que ofrece una plataforma digital con un amplio catalogo de alquileres  </p>
+
+                    <p class="text-primary"> En 1917, en la planta de La Boca, comenzó el armado experimental de las unidades Ford “T”, el modelo producido con la línea de montaje móvil, una innovación que dio origen a un nuevo sistema de producción: el fordismo, que se constituyó como el nuevo paradigma de la producción industrial del siglo XX, en tanto permitía producir más unidades de mayor calidad, en menos tiempo, disminuyendo los costos, aumentando las ventas, mejorando los beneficios para los operarios y aumentando el empleo. Para 1920, 8 de cada 9 automóviles que se vendían, eran modelos Ford “T” y seis años más tarde Ford Argentina ya contaba con 1500 empleados, 2400 talleres exclusivos en todo el país y más de 285 concesionarios.</p>
+                        
+                        <p class="text-primary"> Tras un proceso de expansión sostenida, la Planta de La Boca supo ensamblar distintos modelos Ford: desde el Ford “T” se pasó al Ford “A”, se incorporaron también los modelos de cilindros en V, así como también los camiones F-500, F-600 y F-900. Hacia 1959, y con la visita de Henry Ford II, se presenta la Pick-Up F-100, se constituye Ford Argentina S.C.A y se aprueban las inversiones para dar inicio a la construcción de Planta Pacheco.</p>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-primary">Acerca de nuestro compromiso</h2>
+                    <p class="text-primary">A lo largo de los más de 100 años de presencia ininterrumpida, Ford ha construido un fuerte vínculo con la sociedad argentina. Un vínculo que se forjó en base a más de un siglo de invertir y generar fuentes de trabajo de calidad, de apostar al desarrollo de la industria automotriz en Argentina, y de contribuir fuertemente al desarrollo de la sociedad en el país.</p>
+
+                    <p class="text-primary"> En Ford estamos convencidos que la Educación es la herramienta transformacional más potente para generar un desarrollo genuino y sostenible de las personas y la sociedad. Es por este motivo que la educación es el principal eje de los programas de contribución a la comunidad de Ford en Argentina a lo largo y ancho del país.</p>
+                    <p><img class="border border-success rounded" src="assets/img/About2.webp" width="90%" height="65%" alt=""></p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-primary">Nuestros programas</h2>
+                    <p class="text-primary">Esta iniciativa es llevada adelante por Ford y su red de concesionarios. El programa “Ford para la educación” comenzó en 1968 con el propósito de brindar un aporte real y duradero a la comunidad rural del interior del país en un área tan importante como es la educación.  Fue creado con tres objetivos de vanguardia para la época: la provisión de agua potable, energía eléctrica y diseño de bajo mantenimiento. Desde entonces y hasta 1982 se construyeron y donaron 41 edificios escolares localizadas en pequeñas comunidades y parajes del interior a lo largo y ancho de nuestro país. En 2002 Ford decidió evaluar el estado de las escuelas y decidió implementar una segunda fase de este programa. Se inició así un nuevo programa denominado “Educación para un nuevo mañana” cuyo propósito es reciclar, reequipar y refuncionalizar con tecnologías amigables con el medioambiente estos establecimientos incorporando soluciones de seguridad y confort ambientalmente amigables con el entorno en cada geografía. Ya son 25 las escuelas que Ford Argentina ha reinaugurado desde el año 2003.</p>
+                    <p><img class="border border-primary rounded" src="assets/img/About1.webp" width="90%" height="65%" alt=""></p>
+                </div>
+            </div>
+        </div></p>
+   
+      
+
+</main>
+    <footer class="bg-light text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="nav-footer">
+              <ul class="list-inline mt-3">
+                <li class="list-inline-item">
+                  <a
+                    href="index.html"
+                    style="text-decoration: none"
+                    class="custom-color-a"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="productos.html"
+                    style="text-decoration: none"
+                    class="custom-color-a"
+                    >Sobre Nosotros</a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="contact.html"
+                    style="text-decoration: none"
+                    class="custom-color-a"
+                    >Contacto</a
+                  >
+                </li>
+                <div class="social-icons mt-3">
+                  <a href="#" class="whatsapp custom-color-a mx-2 iconStyle"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                  <a href="#" class="instagram custom-color-a mx-2 iconStyle"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="facebook custom-color-a mx-2 iconStyle"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </div>
+              </ul>
+            </nav>
+
+            <div class="copyright-footer">
+              <p class="copyright text-primary">
+                &copy; Copyright
+                <span class="text-primary">Blue Rental</span> All Rights
+                Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/index.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
