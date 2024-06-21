@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Blue Rental | Contacto</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.3.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/styles/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/styles/contactoStyle.css" />
+  <link rel="stylesheet" href="./assets/styles/customClasses.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/inicio"><img src="assets/img/logonav.png" alt="" width="150"
+                    height="150" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="/inicio">Inicio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/alquileres">Alquileres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quienes Somos</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-custom mx-1" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop1">
+                    Registrarse
+                </button>
+                <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                    Registro
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body custom-bg3">
+                                <div class="container">
+                                    <form id="registerForm" class="accessForm">
+                                        <h2 class="text-light">¡Registrate!</h2>
+                                        <label class="text-light">Nombre/s:</label>
+                                        <input placeholder="Ingrese su nombre" type="text" name="username"
+                                            class="form-control mb-3" />
+                                        <label class="text-light">Apellido/s:</label>
+                                        <input placeholder="Ingrese su Apellido" type="text" name="username"
+                                            class="form-control mb-3" />
+                                        <label class="text-light">Correo Electronico:</label>
+                                        <input placeholder="example@gmail.com" type="email" name="email"
+                                            class="form-control mb-3" />
+                                        <label class="text-light">Contraseña</label>
+                                        <input placeholder="Ingrese su contraseña" type="password" name="password"
+                                            class="form-control mb-3" />
+                                        <label class="text-light">Repetir Contraseña</label>
+                                        <input placeholder="Repita su contraseña" type="password"
+                                            name="confirm-password" class="form-control mb-3" />
+                                        <span id="error"> </span>
+                                        <div>
+                                            <input type="checkbox" name="check" />
+                                            <span class="text-light">Aceptar los terminos y condiciones</span>
+                                        </div>
+                                        <button type="submit" class="btn button-custom2">
+                                            Registrarse
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer bg-light">
+                                <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">
+                                    Salir
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-custom mx-1" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop2">
+                    Inicio Sesión
+                </button>
+                <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                    Inicio Sesión
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body custom-bg3">
+                                <div class="container">
+                                    <form id="registerForm" class="accessForm">
+                                        <h2 class="text-light">Iniciar Sesión</h2>
+                                        <label class="text-light">Correo Electronico:</label>
+                                        <input placeholder="example@gmail.com" type="email" name="email"
+                                            class="form-control mb-3" />
+                                        <label class="text-light">Contraseña</label>
+                                        <input placeholder="Ingrese su contraseña" type="password" name="password"
+                                            class="form-control mb-3" />
+                                        <button type="submit" class="btn button-custom2">
+                                            Iniciar Sesión
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer bg-light">
+                                <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">
+                                    Salir
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="d-flex me-5">
+                    <input class="form-control me-sm-2" type="search" placeholder="Buscar..." />
+                    <button class="btn button-custom my-2 my-sm-0" type="submit">
+                        Buscar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+  <div class="image-container">
+    <img src="./assets/img/Header-contactos.webp" alt="Imagen" />
+    <div class="text-overlay">
+      ¡Contactanos!
+    </div>
+  </div>
+  <br />
+  <main>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img style="height: 20px; width: 20px" src="./assets/img/map.png" alt="" />
+          Dirección <br />
+          Moreno 155 - P3600KAC <br />
+          Formosa Capital. Argentina.
+        </div>
+        <div class="col">
+          <img style="height: 20px; width: 20px" src="./assets/img/viber.png" alt="" />
+          Contactos <br />
+          Teléfono: 54 0370 4433758 <br />
+          Email: BlueRental@gmail.com
+        </div>
+        <div class="col">
+          <img style="height: 20px; width: 20px" src="./assets/img/clock.png" alt="" />
+          Horarios de Atención <br />
+          Lunes a Viernes: 08:30 a 17:30 <br />
+          Hs. Sábados: 08:00 a 12:00 Hs.
+        </div>
+      </div>
+    </div>
+    <br />
+    <form id="form" class="contactForm">
+      <h2 class="text-light">Escribanos sus consultas</h2>
+
+      <label for="name" class="text-light">Nombre</label>
+      <input type="text" id="name" name="name" class="form-control mb-3" placeholder="Fernando" />
+      <label for="motivo" class="text-light">Motivo</label>
+      <input type="text" id="motivo" name="motivo" class="form-control mb-3" />
+      <label for="email" class="text-light">Email</label>
+      <input type="email" id="email" name="email" class="form-control mb-3" placeholder="example@gmail.com" />
+      <label for="text" class="text-light">mensaje del correo</label>
+      <textarea name="text" id="text" cols="30" rows="10" class="form-control mb-3"></textarea>
+      <button type="submit" class="btn button-custom2">Enviar</button>
+    </form>
+  </main>
+  <br />
+  <footer class="bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="nav-footer">
+            <ul class="list-inline mt-3">
+              <li class="list-inline-item">
+                <a href="/inicio" style="text-decoration: none" class="custom-color-a">Inicio</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="" style="text-decoration: none" class="custom-color-a">Sobre
+                  Nosotros</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/contacto" style="text-decoration: none" class="custom-color-a">Contacto</a>
+              </li>
+              <div class="social-icons mt-3">
+                <a href="#" class="whatsapp custom-color-a mx-2 iconStyle"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="instagram custom-color-a mx-2 iconStyle"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="facebook custom-color-a mx-2 iconStyle"><i class="fab fa-facebook"></i></a>
+              </div>
+            </ul>
+          </nav>
+
+          <div class="copyright-footer">
+            <p class="copyright text-primary">
+              &copy; Copyright
+              <span class="text-primary">Blue Rental</span> All Rights
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
