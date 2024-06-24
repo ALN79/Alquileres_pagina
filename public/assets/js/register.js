@@ -9,14 +9,28 @@ const register = async (e) => {
     const email = document.getElementById("registerEmail").value
     const contrasenia = document.getElementById("registerPassword").value
 
-    const peticion = await fetch('http://localhost:3000/register', {
-        method: 'POST',
-        body: JSON.stringify({nombre, apellido, email, contrasenia}),
-        headers: {
-            'Content-type': 'application/json'
-        }
-    })
-    window.location.href = "index.html" 
+    if (!nombre) {
+        alert("Ingrese nombre")
+    }
+    else if (!apellido) {
+        alert("Ingrese apellido")
+    }
+    else if (!email) {
+        alert("Ingrese correo electronico")
+    }
+    else if (!contrasenia) {
+        alert("Ingrese contraseña")
+    }
+    else {
+        const peticion = await fetch('http://localhost:3000/register', {
+            method: 'POST',
+            body: JSON.stringify({ nombre, apellido, email, contrasenia }),
+            headers: {
+                'Content-type': 'application/json'
+            }
+        })
+        window.location.href = "index.html"
+    }
 }
 
 formRegister.addEventListener('submit', register);
