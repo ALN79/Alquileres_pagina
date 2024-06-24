@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Blue Rental | Contacto</title>
+  <title>Blue Rental | Sobre nosotros</title>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -10,14 +10,14 @@
   <!-- Bootstrap CSS v5.3.2 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./assets/styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/styles/indexStyle.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="stylesheet" href="./assets/styles/contactoStyle.css" />
-  <link rel="stylesheet" href="./assets/styles/customClasses.css">
+  <link rel="stylesheet" href="assets/styles/customClasses.css" />
 </head>
 
 <body>
@@ -39,10 +39,10 @@
                         <a class="nav-link" href="alquileresCatalogo.html">Alquileres</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Quienes Somos</a>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="about.html">Quienes Somos</a>
                     </li>
                 </ul>
                 <button type="button" class="btn btn-outline-custom mx-1" data-bs-toggle="modal"
@@ -137,52 +137,49 @@
         </div>
     </nav>
 </header>
-  <div class="image-container">
-    <img src="./assets/img/Header-contactos.webp" alt="Imagen" />
-    <div class="text-overlay">
-      ¡Contactanos!
-    </div>
-  </div>
-  <br />
-  <main>
-    <div class="container text-center">
+  <main style="width: 100%;  height: 100%;">
+    <p>
+    <div class="container bg-light rounded">
       <div class="row">
-        <div class="col">
-          <img style="height: 20px; width: 20px" src="./assets/img/map.png" alt="" />
-          Dirección <br />
-          Moreno 155 - P3600KAC <br />
-          Formosa Capital. Argentina.
+        <div class="col-md-6">
+          <p>
+          <h1 class="text-primary">Sobre Nosotros</h1>
+          </p>
+          <p class="text-primary"> El problema del cual se sustenta toda nuestra propuesta de valor es la dificultad que
+            existe hoy en día en Formosa para encontrar alquiler. Esto se da por la poca información que poseen los
+            inquilinos al buscar uno, carecen de una opción sencilla y rápida para hallarlo.
+          </p>
+          <p class="text-primary"> </p>
+          Este problema afecta a diferentes personas, como estudiantes, trabajadores, extranjeros, gente sin vivienda
+          fija, gente de bajos recursos, etc. La gran mayoría de estos perfiles no encuentran un alquiler ideal o del
+          todo adecuado a sus necesidades por el apresuro y urgencia de bienestar que ofrece una vivienda
+          </p>
         </div>
-        <div class="col">
-          <img style="height: 20px; width: 20px" src="./assets/img/viber.png" alt="" />
-          Contactos <br />
-          Teléfono: 54 0370 4433758 <br />
-          Email: BlueRental@gmail.com
-        </div>
-        <div class="col">
-          <img style="height: 20px; width: 20px" src="./assets/img/clock.png" alt="" />
-          Horarios de Atención <br />
-          Lunes a Viernes: 08:30 a 17:30 <br />
-          Hs. Sábados: 08:00 a 12:00 Hs.
+        <div class="col-md-6">
+          <h2 class="text-primary">Acerca de nuestro compromiso</h2>
+          <p class="text-primary"> Por lo tanto con nuestro grupo, entendimos que era necesario un lugar, donde se
+            hospede toda la información acerca de alquileres de forma accesible y sencillo. Gracias a esto ideamos una
+            propuesta de valor basada en un software que facilita el encontrar alquiler a cualquier persona que esté
+            en busca de uno. Este software será un sitio web llamado Blue Rental y será un intermediario entre
+            arrendador y arrendatario</p>
         </div>
       </div>
-    </div>
-    <br />
-    <form id="contactForm" class="contactForm">
-      <h2 class="text-light">Escribanos sus consultas</h2>
-
-      <label for="contactName" class="text-light">Nombre</label>
-      <input type="text" id="contactName" name="name" class="form-control mb-3" placeholder="Fernando" />
-      <label for="motivo" class="text-light">Motivo</label>
-      <input type="text" id="motivo" name="motivo" class="form-control mb-3" />
-      <label for="contactEmail" class="text-light">Email</label>
-      <input type="email" id="contactEmail" name="email" class="form-control mb-3" placeholder="example@gmail.com" />
-      <label for="contactText" class="text-light">mensaje del correo</label>
-      <textarea name="text" id="contactText" cols="30" rows="10" class="form-control mb-3"></textarea>
-      <button type="submit" class="btn button-custom2">Enviar</button>
-    </form>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              <img class="border border-primary rounded " src="assets/img/aboutimg2.jpg" width="90%" height="65%">
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              <img class="border border-primary rounded" src="assets/img/aboutimg1.webp" width="90%" height="65%" alt="">
+            </p>
+          </div>
+        </div>
+      </div>
+      <p></p>
   </main>
-  <br />
   <footer class="bg-light text-center">
     <div class="container">
         <div class="row">
@@ -225,15 +222,13 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
+  <script src="assets/js/index.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
 
-    <script src="assets/js/register.js"></script>
-
+  <script src="assets/js/register.js"></script>
 </body>
-
-
 
 </html>
