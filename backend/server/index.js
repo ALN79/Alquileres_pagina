@@ -15,16 +15,6 @@ app.use(express.static(path.join(__dirname, "../../public")));
 const {ConnectionDataBase} = require("../database/connectiondb")
 
 //rutas y controladores
-app.get("/inicio", (req,res) => {
-    res.sendFile(path.join(__dirname, "../../public" , "index.html"))
-})
-app.get("/alquileres", (req,res) => {
-    res.sendFile(path.join(__dirname,"../../public" , "alquileresCatalogo.html"))
-})
-app.get("/contacto", (req,res) => {
-    res.sendFile(path.join(__dirname,"../../public" , "contacto.html"))
-})
-
 app.post("/register", async (req,res) => {
 
     const {nombre, apellido, email, contrasenia} = req.body;
@@ -35,7 +25,7 @@ app.post("/register", async (req,res) => {
 
     connectiondb.end()
 
-    res.redirect("/inicio")
+    res.redirect("public/index.html")
 })
 
 app.listen(3000,console.log("Server Running in port" ,3000))
