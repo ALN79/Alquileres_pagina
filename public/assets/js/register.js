@@ -16,6 +16,7 @@ const register = async (e) => {
             'Content-type': 'application/json'
         }
     })
+    window.location.href = "http://localhost:3000/inicio" 
 }
 
 formRegister.addEventListener('submit', register);

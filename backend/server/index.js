@@ -34,6 +34,8 @@ app.post("/register", async (req,res) => {
     await connectiondb.query("INSERT INTO `usuarios`(`idTipoUsuario`, `nombre`, `apellido`, `correoElectronico`, `contraseña`) VALUES (1,?,?,?,?)", [nombre, apellido, email, contrasenia])
 
     connectiondb.end()
+
+    res.redirect("/inicio")
 })
 
 app.listen(3000,console.log("Server Running in port" ,3000))
