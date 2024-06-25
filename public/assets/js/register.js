@@ -1,5 +1,6 @@
 const formRegister = document.getElementById("registerForm")
 
+//Funcion De Registro
 const register = async (e) => {
 
     e.preventDefault()
@@ -10,7 +11,6 @@ const register = async (e) => {
     const contrasenia = document.getElementById("registerPassword").value
 
     function eliminarAlertas() {
-        
         const alertaExistente = document.getElementById("alertaRegistro");
         if (alertaExistente) {
             alertaExistente.remove();
@@ -18,7 +18,7 @@ const register = async (e) => {
     }
     
     eliminarAlertas()
-    
+
     if (!nombre) {
         const labelName = document.getElementById("labelName")
 
@@ -82,7 +82,7 @@ const register = async (e) => {
 
 
     else {
-        const peticion = await fetch('http://localhost:3000/register', {
+        const peticionRegistro = await fetch('http://localhost:3000/register', {
             method: 'POST',
             body: JSON.stringify({ nombre, apellido, email, contrasenia }),
             headers: {

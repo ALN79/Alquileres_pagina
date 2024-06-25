@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="./assets/styles/customClasses.css" />
     <link rel="stylesheet" href="./assets/styles/indexStyle.css" />
+    <link rel="stylesheet" href="assets/styles/map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <body>
@@ -66,14 +71,17 @@
                                             <h2 class="text-light">¡Registrate!</h2>
                                             <label for="name" class="text-light" id="labelName">Nombre/s:</label>
                                             <input placeholder="Ingrese su nombre" type="text" name="name"
-                                                class="form-control mb-3" id="name"/>
-                                            <label for="surname" class="text-light" id="labelSurName" >Apellido/s:</label>
+                                                class="form-control mb-3" id="name" />
+                                            <label for="surname" class="text-light"
+                                                id="labelSurName">Apellido/s:</label>
                                             <input placeholder="Ingrese su Apellido" type="text" name="surname"
                                                 class="form-control mb-3" id="surname" />
-                                            <label for="registerEmail" class="text-light" id="labelEmail">Correo Electronico:</label>
+                                            <label for="registerEmail" class="text-light" id="labelEmail">Correo
+                                                Electronico:</label>
                                             <input placeholder="example@gmail.com" type="email" name="email"
                                                 class="form-control mb-3" id="registerEmail" />
-                                            <label for="registerPassword" class="text-light" id="labelPassword">Contraseña</label>
+                                            <label for="registerPassword" class="text-light"
+                                                id="labelPassword">Contraseña</label>
                                             <input placeholder="Ingrese su contraseña" type="password" name="password"
                                                 class="form-control mb-3" id="registerPassword" />
                                             <button type="submit" class="btn button-custom2">
@@ -318,10 +326,6 @@
                 </div>
             </div>
         </div>
-        <!--<div class="container">
-            <iframe src="https://fd.formosa.gob.ar/mapa" width="100%" height="500px" frameborder="0"
-                class="border-custom"></iframe>-->
-        </div>
     </main>
     <footer class="bg-light text-center">
         <div class="container">
@@ -372,6 +376,7 @@
         crossorigin="anonymous"></script>
 
     <script src="assets/js/register.js"></script>
+
 </body>
 
 </html>
