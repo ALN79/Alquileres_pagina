@@ -183,63 +183,125 @@
         
 
 
-        <div class="container-fluid">
-            <div class="row mt-2">
-                <div class="col-md-7">
-                    <div class="image-box" id="image-box-1">
-                        <p>Haz clic para añadir una imagen</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="image-box" id="image-box-2">
-                        <p>Haz clic para añadir una imagen</p>
-                    </div>
-                    <div class="image-box" id="image-box-2">
-                        <p>Haz clic para añadir una imagen</p>
-                    </div>
-                    <div class="image-box" id="image-box-2">
-                        <p>Haz clic para añadir una imagen</p>
-                    </div>
-                </div>
-                <div class="col-md-1">
-                    <div class="card text-white bg-dark custom-bg detallesAlquiler">
-                        <div class="card-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="opcionTipoAlquiler">Tipo de Alquiler:</label>
-                                    <select class="form-control" id="opcionTipoAlquiler">
-                                        <option value="Vivienda">Vivienda</option>
-                                        <option value="Salon">Salón</option>
-                                        <option value="Quinta">Quinta</option>
-                                        <option value="Quincho">Quincho</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="opcionProvincia">Provincia:</label>
-                                    <select class="form-control" id="opcionProvincia">
-                                        <option value="Formosa">Formosa</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="opcionPrecio">Precio:</label>
-                                    <input type="text" id="opcionPrecio" class="form-control" placeholder="Escribe aquí el precio...">
-                                </div>
-                                <div class="form-group">
-                                    <label for="opcionBarrio">Barrio:</label>
-                                    <select class="form-control" id="opcionBarrio">
-                                        <option value="12 DE OCTUBRE">12 DE OCTUBRE</option>
-                                        <option value="2 DE ABRIL">2 DE ABRIL</option>
-                                        <!-- Otras opciones... -->
-                                        <option value="20 de JULIO">20 de JULIO</option>
-                                        <option value="REPÚBLICA ARGENTINA">REPÚBLICA ARGENTINA</option>
-                                    </select>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+<div class="container-fluid">
+    <div class="row mt-2">
+        <div class="col-md-7">
+            <div>
+                <div class="image-box" id="imageBox">
+                    <p>Haz clic para añadir una imagen</p>
                 </div>
             </div>
         </div>
+        <div class="col-md-4">
+         
+                <div class="image-box-1" id="imageBox">
+                    <p>Haz clic para añadir una imagen</p>
+                </div>
+                
+                <div class="image-box-2" id="imageBox">
+                    <p>Haz clic para añadir una imagen</p>
+                </div>
+                <div class="image-box-2" id="imageBox">
+                    <p>Haz clic para añadir una imagen</p>
+                </div>
+        </div>
+        <div class="col-md-1">
+            <div class="card text-white custom-bg detallesAlquiler">
+                <section>
+                    <div class="container-fluid ">
+                        <form class="container-fluid">
+                                <label for="opcionTipolquiler">Tipo de Alquiler:</label>
+                                <select class="form-control" id="opcionTipoAlquiler">
+                                    <option value="Vivienda">Vivienda</option>
+                                    <option value="Salon">Salón</option>
+                                    <option value="Quinta">Quinta</option>
+                                    <option value="Quincho">Quincho</option>
+                                </select>
+                                <label for="opcionProvincia">Provincia:</label>
+                                <select class="form-control" id="opcionProvincia">
+                                    <option value="Formosa">Formosa</option>
+                                </select>
+                                <label for="opcionPrecio">Precio:</label>
+                                <input type="text" id="opcionPrecio" class="form-control" placeholder="Escribe aquí el precio...">
+                            
+                                <label for="opcionBarrio">Barrio:</label>
+                                <select class="form-control" id="opcionBarrio">
+                                    <option value="12 DE OCTUBRE">12 DE OCTUBRE</option>
+                                    <option value="2 DE ABRIL">2 DE ABRIL</option>
+                                    <option value="BARRIO MILITAR">BARRIO MILITAR</option>
+                                    <option value="OBRERO">OBRERO</option>
+                                    <option value="BARRIO VIAL">BARRIO VIAL</option>
+                                    <option value="DON BOSCO">DON BOSCO</option>
+                                    <option value="EL MISTOL">EL MISTOL</option>
+                                    <option value="EL RESGUARDO">EL RESGUARDO</option>
+                                    <option value="MANUEL BELGRANO">MANUEL BELGRANO</option>
+                                    <option value="EMILIO TOMAS">EMILIO TOMAS</option>
+                                    <option value="EVA PERÓN">EVA PERÓN</option>
+                                    <option value="GUADALUPE">GUADALUPE</option>
+                                    <option value="INDEPENDENCIA">INDEPENDENCIA</option>
+                                    <option value="J.F. KENNEDY">J.F. KENNEDY</option>
+                                    <option value="JUAN D. PERÓN">JUAN D. PERÓN</option>
+                                    <option value="LA FLORESTA">LA FLORESTA</option>
+                                    <option value="LAS DELICIAS">LAS DELICIAS</option>
+                                    <option value="LIBORSI">LIBORSI</option>
+                                    <option value="MARIANO MORENO">MARIANO MORENO</option>
+                                    <option value="NANQOM">NANQOM</option>
+                                    <option value="SAN AGUSTÍN">SAN AGUSTÍN</option>
+                                    <option value="SAN FRANCISCO">SAN FRANCISCO</option>
+                                    <option value="SAN JOSÉ OBRERO">SAN JOSÉ OBRERO</option>
+                                    <option value="SAN MARTÍN">SAN MARTÍN</option>
+                                    <option value="SAN MIGUEL">SAN MIGUEL</option>
+                                    <option value="SAN PEDRO">SAN PEDRO</option>
+                                    <option value="SANTA ROSA">SANTA ROSA</option>
+                                    <option value="SIMÓN BOLIVAR">SIMÓN BOLIVAR</option>
+                                    <option value="VENEZUELA">VENEZUELA</option>
+                                    <option value="VILLA DEL ROSARIO">VILLA DEL ROSARIO</option>
+                                    <option value="VILLA HERMOSA">VILLA HERMOSA</option>
+                                    <option value="VILLA LA PILAR">VILLA LA PILAR</option>
+                                    <option value="VILLA LOURDES">VILLA LOURDES</option>
+                                    <option value="VIRGEN DE LUJÁN">VIRGEN DE LUJÁN</option>
+                                    <option value="LA ESPERANZA">LA ESPERANZA</option>
+                                    <option value="7 DE MAYO">7 DE MAYO</option>
+                                    <option value="ANTENOR GAUNA">ANTENOR GAUNA</option>
+                                    <option value="1° DE MAYO">1° DE MAYO</option>
+                                    <option value="EL PORVENIR">EL PORVENIR</option>
+                                    <option value="BERNARDINO RIVADAVIA">BERNARDINO RIVADAVIA</option>
+                                    <option value="VIRGEN DE ITATÍ">VIRGEN DE ITATÍ</option>
+                                    <option value="JUAN M. DE ROSAS">JUAN M. DE ROSAS</option>
+                                    <option value="LA PAZ">LA PAZ</option>
+                                    <option value="DIVINO NIÑO JESÚS">DIVINO NIÑO JESÚS</option>
+                                    <option value="SAN PÍO X">SAN PÍO X</option>
+                                    <option value="B° PIERO">B° PIERO</option>
+                                    <option value="PARQUE INDUSTRIAL">PARQUE INDUSTRIAL</option>
+                                    <option value="SAN JUAN BAUTISTA">SAN JUAN BAUTISTA</option>
+                                    <option value="16 DE JULIO">16 DE JULIO</option>
+                                    <option value="SAG. CORAZÓN DE MARÍA">SAG. CORAZÓN DE MARÍA</option>
+                                    <option value="ARTURO ILLIA">ARTURO ILLIA</option>
+                                    <option value="HIPÓLITO IRIGOYEN">HIPÓLITO IRIGOYEN</option>
+                                    <option value="SAN CAYETANO">SAN CAYETANO</option>
+                                    <option value="FACUNDO QUIROGA">FACUNDO QUIROGA</option>
+                                    <option value="SAN ANDRES">SAN ANDRES</option>
+                                    <option value="SANTA LUCÍA">SANTA LUCÍA</option>
+                                    <option value="LA VIRGEN NIÑA">LA VIRGEN NIÑA</option>
+                                    <option value="17 DE OCTUBRE">17 DE OCTUBRE</option>
+                                    <option value="LIBERTAD">LIBERTAD</option>
+                                    <option value="ISLAS MALVINAS">ISLAS MALVINAS</option>
+                                    <option value="COLLUCCIO">COLLUCCIO</option>
+                                    <option value="SAN ISIDRO LABRADOR">SAN ISIDRO LABRADOR</option>
+                                    <option value="ROBERTO SOTELO">ROBERTO SOTELO</option>
+                                    <option value="8 DE MARZO">8 DE MARZO</option>
+                                    <option value="CO.VI.FOL.">CO.VI.FOL.</option>
+                                    <option value="FONTANA">FONTANA</option>
+                                    <option value="SOLANO LIMA">SOLANO LIMA</option>
+                                    <option value="LA ESTRELLA">LA ESTRELLA</option>
+                                    <option value="20 de JULIO">20 de JULIO</option>
+                                    <option value="REPÚBLICA ARGENTINA">REPÚBLICA ARGENTINA</option>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
 
 
