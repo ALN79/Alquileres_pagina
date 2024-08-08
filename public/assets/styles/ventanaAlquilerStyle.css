@@ -1,0 +1,84 @@
+.image-box {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+}
+
+.image-box-1{
+    margin-bottom: 1px;
+    margin-left: -60px;
+    margin-top: 20px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box-2{
+    margin-bottom: 1px;
+    margin-left: -60px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detallesAlquiler{
+    margin-left: -160px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 270px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.muroAzul {
+    display: flex;
+    background-color: #00193B;
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.muroAzul:hover {
+    background-color: hsl(215, 94%, 21%);
+    transition: 0.9s;
+}
+
+.muroAzul:not(:hover) {
+    background-color: #00193B;
+    transition: 0.9s;
+}
+
+.muroAzul section {
+    color: white;
+    font-size: xx-large;
+    font-family: "Montserrat", sans-serif;
+}
+
+.muroAzul section:hover {
+    color: rgb(238, 238, 238);
+    transition: 0.9s;
+    font-weight: 600
+}
+
+.muroAzul section:not(:hover) {
+    color: rgb(255, 255, 255);
+    transition: 0.9s;
+}

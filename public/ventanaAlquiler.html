@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blue Rental | Inicio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/styles/customClasses.css" />
+    <link rel="stylesheet" href="./assets/styles/ventanaAlquilerStyle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="assets/img/logonav.png" alt="" width="150"
+                        height="150" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                    aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="alquileresCatalogo.html">Alquileres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Quienes Somos</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-custom mx-1" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop1">
+                        Registrarse
+                    </button>
+                    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-light">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                        Registro
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body custom-bg3">
+                                    <div class="container">
+                                        <form id="registerForm" class="accessForm">
+                                            <h2 class="text-light">¡Registrate!</h2>
+                                            <label for="name" class="text-light" id="labelName">Nombre/s:</label>
+                                            <input placeholder="Ingrese su nombre" type="text" name="name"
+                                                class="form-control mb-3" id="name" />
+                                            <label for="surname" class="text-light"
+                                                id="labelSurName">Apellido/s:</label>
+                                            <input placeholder="Ingrese su Apellido" type="text" name="surname"
+                                                class="form-control mb-3" id="surname" />
+                                            <label for="registerEmail" class="text-light" id="labelEmail">Correo
+                                                Electronico:</label>
+                                            <input placeholder="example@gmail.com" type="email" name="email"
+                                                class="form-control mb-3" id="registerEmail" />
+                                            <label for="registerPassword" class="text-light"
+                                                id="labelPassword">Contraseña</label>
+                                            <input placeholder="Ingrese su contraseña" type="password" name="password"
+                                                class="form-control mb-3" id="registerPassword" />
+                                            <button type="submit" class="btn button-custom2">
+                                                Registrarse
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer bg-light">
+                                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">
+                                        Salir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-custom mx-1" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop2">
+                        Inicio Sesión
+                    </button>
+                    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-light">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                        Inicio Sesión
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body custom-bg3">
+                                    <div class="container">
+                                        <form id="logInForm" class="accessForm">
+                                            <h2 class="text-light">Iniciar Sesión</h2>
+                                            <label for="loginEmail" class="text-light">Correo Electronico:</label>
+                                            <input placeholder="example@gmail.com" type="email" name="email"
+                                                class="form-control mb-3" id="loginEmail" />
+                                            <label for="loginPassword" class="text-light">Contraseña</label>
+                                            <input placeholder="Ingrese su contraseña" type="password" name="password"
+                                                class="form-control mb-3" id="loginPassword" />
+                                            <button type="submit" class="btn button-custom2">
+                                                Iniciar Sesión
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer bg-light">
+                                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">
+                                        Salir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="d-flex me-5">
+                        <input class="form-control me-sm-2" type="search" placeholder="Buscar..." />
+                        <button class="btn button-custom my-2 my-sm-0" type="submit">
+                            Buscar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="muroAzul">
+            <section id="titulo" class="text-center py-4">
+                Nombre Alquiler
+            </section>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row mt-2">
+                <div class="col-md-7">
+                    <div>
+                        <img class="image-box" src="assets/img/casa-ej.jpg" alt="" width=800px height="600px">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="image-box-1" src="assets/img/casa-ej.jpg" alt="" width=400px height="200px">
+                    <img class="image-box-2" src="assets/img/casa-ej.jpg" alt="" width=400px height="200px">
+                    <img class="image-box-2" src="assets/img/casa-ej.jpg" alt="" width=400px height="200px">
+                </div>
+                <div class="col-md-1">
+                    <div class="card text-white custom-bg detallesAlquiler">
+                        <section>
+                            <div class="container-fluid ">
+                                <h3>
+                                    <p class="card-title text-light">Precio: $100.000</p>
+                                </h3>
+                                <h5>Tipo de alquiler</h5>
+                                <h5>Provincia</h5>
+                                <h5>Barrio</h5>
+                                <p></p>
+                            </div>
+                        </section>
+                    </div>
+                    <p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title">Descripcion Alquiler</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                            asperiores ut saepe consequuntur velit cumque optio labore, est veniam fugiat rem rerum
+                            et sapiente quia dolore. Nihil eaque tempora doloribus! <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ducimus labore sapiente
+                            impedit aperiam explicabo corrupti. Velit maxime dolore nulla aut aliquam temporibus
+                            ullam atque a explicabo! Esse, molestiae voluptatibus. <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti a eum sequi! Error maiores cupiditate dolores enim? Similique reiciendis fuga quam aliquid perspiciatis enim, laudantium consequuntur nobis necessitatibus? Itaque. <br>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas possimus necessitatibus rem tempore at praesentium suscipit ex temporibus vero voluptatem, laudantium, quo, sunt velit harum exercitationem! Pariatur quasi nihil ut.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <p></p>
+    <footer class="bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="nav-footer">
+                        <ul class="list-inline mt-3">
+                            <li class="list-inline-item">
+                                <a href="index.html" style="text-decoration: none" class="custom-color-a">Inicio</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="about.html" style="text-decoration: none" class="custom-color-a">Sobre
+                                    Nosotros</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="contacto.html" style="text-decoration: none"
+                                    class="custom-color-a">Contacto</a>
+                            </li>
+                            <div class="social-icons mt-3">
+                                <a href="#" class="whatsapp custom-color-a mx-2 iconStyle"><i
+                                        class="fab fa-whatsapp"></i></a>
+                                <a href="#" class="instagram custom-color-a mx-2 iconStyle"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="#" class="facebook custom-color-a mx-2 iconStyle"><i
+                                        class="fab fa-facebook"></i></a>
+                            </div>
+                        </ul>
+                    </nav>
+                    <div class="copyright-footer">
+                        <p class="copyright text-primary">
+                            &copy; Copyright
+                            <span class="text-primary">Blue Rental</span> All Rights
+                            Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/register.js"></script>
+
+</body>
+
+</html>
