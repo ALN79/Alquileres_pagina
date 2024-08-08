@@ -52,3 +52,14 @@
     cursor: pointer;
     transition: border-color 0.3s;
 }
+
+.detallesAlquiler{
+    margin-left: -160px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 270px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
