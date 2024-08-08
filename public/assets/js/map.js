@@ -19,8 +19,6 @@ async function onMapClick(e) {
         lng: e.latlng.lng
     };
 
-    
-
     const peticionCoordenadas = await fetch('http://localhost:3000/save-coords', {
         method: 'POST',
         body: JSON.stringify(coords),

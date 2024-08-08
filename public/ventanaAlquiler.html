@@ -17,10 +17,9 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="./assets/styles/customClasses.css" />
-    <link rel="stylesheet" href="./assets/styles/indexStyle.css" />
+    <link rel="stylesheet" href="./assets/styles/ventanaAlquilerStyle.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <link rel="stylesheet" href="assets/styles/map.css">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -38,7 +37,7 @@
                 <div class="collapse navbar-collapse" id="navbarColor03">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Inicio </a>
+                            <a class="nav-link" href="index.html">Inicio </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="alquileresCatalogo.html">Alquileres</a>
@@ -137,191 +136,73 @@
                             </div>
                         </div>
                     </div>
+                    <form class="d-flex me-5">
+                        <input class="form-control me-sm-2" type="search" placeholder="Buscar..." />
+                        <button class="btn button-custom my-2 my-sm-0" type="submit">
+                            Buscar
+                        </button>
+                    </form>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <div class="muroAzul">
-            <section class="text-center py-4">¡Encuentra tu vivienda ideal!</section>
+            <section id="titulo" class="text-center py-4">
+                Nombre Alquiler
+            </section>
         </div>
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-12 col-md-6 mb-3">
-                            <div class="card text-white custom-bg">
-                                <a class="ventanaAlquiler" href="ventanaAlquiler.html"><div class="card-body">
-                                    <img src="./assets/img/casa-ej.jpg" class="img-fluid mb-3" alt="" />
-                                    <h4 class="card-title">Titulo representativo del alquiler</h4>
-                                    <p class="card-text">
-                                        Direccion del alquiler:
-                                    </p>
-                                </div></a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 mb-3">
-                            <div class="card text-white custom-bg">
-                                <div class="card-body">
-                                    <img src="./assets/img/casa-ej.jpg" class="img-fluid mb-3" alt="" />
-                                    <h4 class="card-title">Titulo representativo del alquiler</h4>
-                                    <p class="card-text">
-                                        Direccion del alquiler:
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 mb-3">
-                            <div class="card text-white custom-bg">
-                                <div class="card-body">
-                                    <img src="./assets/img/casa-ej.jpg" class="img-fluid mb-3" alt="" />
-                                    <h4 class="card-title">Titulo representativo del alquiler</h4>
-                                    <p class="card-text">
-                                        Direccion del alquiler:
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 mb-3">
-                            <div class="card text-white custom-bg">
-                                <div class="card-body">
-                                    <img src="./assets/img/casa-ej.jpg" class="img-fluid mb-3" alt="" />
-                                    <h4 class="card-title">Titulo representativo del alquiler</h4>
-                                    <p class="card-text">
-                                        Direccion del alquiler
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <aside class="col-md-4">
-                    <div class="card mt-1 border-custom">
-                        <img src="./assets/img/asideIndex1.png" alt="">
-                    </div>
-            </div>
-            </aside>
-        </div>
-        </div>
-        <div class="container mb-5">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide d-none d-md-block">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="assets/img/casa-ej.jpg" class="d-block w-100" alt="..." />
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Titulo descriptivo del alquiler</h5>
-                            <p>
-                                Barrio del alquiler
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./assets/img/casa-ej.jpg" class="d-block w-100" alt="..." />
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Titulo descriptivo del alquiler</h5>
-                            <p>
-                                Barrio del alquiler
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/img/casa-ej.jpg" class="d-block w-100" alt="..." />
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Titulo descriptivo del alquiler</h5>
-                            <p>
-                                Barrio del alquiler
-                            </p>
-                        </div>
+        <div class="container-fluid">
+            <div class="row mt-2">
+                <div class="col-md-7">
+                    <div>
+                        <img class="image-box" src="assets/img/casa-ej.jpg" alt="" width=800px height="600px">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="col-md-4">
+                    <img class="image-box-1" src="assets/img/casa-ej.jpg" alt="" width=400px height="200px">
+                    <img class="image-box-2" src="assets/img/casa-ej.jpg" alt="" width=400px height="200px">
+                    <img class="image-box-2" src="assets/img/casa-ej.jpg" alt="" width=400px height="200px">
+                </div>
+                <div class="col-md-1">
+                    <div class="card text-white custom-bg detallesAlquiler">
+                        <section>
+                            <div class="container-fluid ">
+                                <h3>
+                                    <p class="card-title text-light">Precio: $100.000</p>
+                                </h3>
+                                <h5>Tipo de alquiler</h5>
+                                <h5>Provincia</h5>
+                                <h5>Barrio</h5>
+                                <p></p>
+                            </div>
+                        </section>
+                    </div>
+                    <p>
+                </div>
             </div>
         </div>
-        <div class="muroAzul">
-            <section class="text-center py-4">¡Vive los mejores eventos!</section>
-        </div>
-        <div class="container my-5">
-            <div class="row">
-                <aside class="col-md-4">
-                    <div class="card mt-1 border-custom">
-                        <img src="./assets/img/asideIndex2.png" alt="">
-                    </div>
-                </aside>
-
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-12 col-md-6 mb-3">
-                            <div class="card text-white custom-bg">
-                                <div class="card-body">
-                                    <img src="./assets/img/casa-ej.jpg" class="img-fluid mb-3" alt="" />
-                                    <h4 class="card-title">Titulo representativo del salon/quinta/etc.</h4>
-                                    <p class="card-text">
-                                        Direccion del lugar: <br>
-                                        Tipo de evento disponible:
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 mb-3">
-                            <div class="card text-white custom-bg">
-                                <div class="card-body">
-                                    <img src="./assets/img/casa-ej.jpg" class="img-fluid mb-3" alt="" />
-                                    <h4 class="card-title">Titulo representativo del salon/quinta/etc.</h4>
-                                    <p class="card-text">
-                                        Direccion del lugar: <br>
-                                        Tipo de evento disponible:
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 mb-3">
-                            <div class="card text-white custom-bg">
-                                <div class="card-body">
-                                    <img src="./assets/img/casa-ej.jpg" class="img-fluid mb-3" alt="" />
-                                    <h4 class="card-title">Titulo representativo del salon/quinta/etc.</h4>
-                                    <p class="card-text">
-                                        Direccion del lugar: <br>
-                                        Tipo de evento disponible:
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 mb-3">
-                            <div class="card text-white custom-bg">
-                                <div class="card-body">
-                                    <img src="./assets/img/casa-ej.jpg" class="img-fluid mb-3" alt="" />
-                                    <h4 class="card-title">Titulo representativo del salon/quinta/etc.</h4>
-                                    <p class="card-text">
-                                        Direccion del lugar: <br>
-                                        Tipo de evento disponible:
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title">Descripcion Alquiler</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                            asperiores ut saepe consequuntur velit cumque optio labore, est veniam fugiat rem rerum
+                            et sapiente quia dolore. Nihil eaque tempora doloribus! <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ducimus labore sapiente
+                            impedit aperiam explicabo corrupti. Velit maxime dolore nulla aut aliquam temporibus
+                            ullam atque a explicabo! Esse, molestiae voluptatibus. <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti a eum sequi! Error maiores cupiditate dolores enim? Similique reiciendis fuga quam aliquid perspiciatis enim, laudantium consequuntur nobis necessitatibus? Itaque. <br>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas possimus necessitatibus rem tempore at praesentium suscipit ex temporibus vero voluptatem, laudantium, quo, sunt velit harum exercitationem! Pariatur quasi nihil ut.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="map"></div>
     </main>
+    <p></p>
     <footer class="bg-light text-center">
         <div class="container">
             <div class="row">
@@ -349,7 +230,6 @@
                             </div>
                         </ul>
                     </nav>
-
                     <div class="copyright-footer">
                         <p class="copyright text-primary">
                             &copy; Copyright
@@ -371,15 +251,6 @@
         crossorigin="anonymous"></script>
 
     <script src="assets/js/register.js"></script>
-
-    <script src="assets/js/map.js"></script>
-
-    <script>
-        window.embeddedChatbotConfig = {
-            chatbotId: "OYuOjkFrepn3kPkIC3Bao",
-            domain: "www.chatbase.co"
-        }
-    </script>
 
 </body>
 
